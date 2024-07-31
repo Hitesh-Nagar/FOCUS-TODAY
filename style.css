@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    background-color: #49a30041;
+}
+main {
+    padding:10px;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+color:  #61481C;
+
+}
+
+.title span {
+color: green;
+}
+
+.card{
+    max-width: 660px;
+   background-color: #FBFBFB;
+    margin-inline: auto;
+    padding: 32px 48px;
+    border-radius :15px; 
+    box-shadow:0px 0px 100px 3px rgba(0, 0, 0, 0.127) ;
+}
+
+
+.subtitle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.img1 {
+    margin-left:1rem ;
+    height: 50px;
+    animation-name: rotate;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+    }
+
+
+.img2{
+position: absolute;
+    left: 156px;
+    height: 12px;
+    top: 23px;
+}
+.toplabel{
+   margin-bottom: 20px;
+}
+
+.bar {
+    max-width: 574px;
+    height: 30px;
+    background-color: #48A3001A;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.barpercentage {
+    width: 0;
+    height: 100%;
+    background-color:#48A300;
+    border-radius: 15px;
+    transition: width 800ms ease-in-out;
+}
+
+.barpercentage p{
+    color: #fff;
+    font-size: 12px;
+    padding:5px ;
+    margin-left:10px;
+}
+
+.warninglabel{
+    color: red;
+    position: absolute;
+    top: 2.5rem;
+    display: none;
+}
+
+.warningshow{
+    display: block !important;
+}
+
+
+
+.goal{
+    max-width: 574px;
+    height: 5rem;
+    background-color: white;
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 64px;
+}
+
+
+.checkbox{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 2px solid #61481C4D;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.check-icon{
+    display: none;
+}
+
+.goal-input{
+border: none;
+margin-left: 20px;
+height: 28px;
+font-family: inherit;
+font-size: 16px;
+flex-grow: 1;
+height: 100%;
+}
+
+.motivation{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.madeby{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.completed .checkbox{
+    background-color: #48A300;
+    border-color: #48A300;
+}
+
+.completed .check-icon{
+    display: block;
+}
+
+.completed  .goal-input{
+    color: #48A300;
+    text-decoration: line-through;
+}
+
+
+@media (max-width:768px){
+.title {
+    font-size: 20px;
+}
+.barpercentage p{
+    font-size: 8px;
+    padding-top: 10px;
+}
+
+.checkbox{
+    flex-shrink: 0;
+}
+
+.goal input{
+    width: 100%;
+}
+}
